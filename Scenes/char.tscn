@@ -1,0 +1,43 @@
+[gd_scene load_steps=2 format=3 uid="uid://b20sfkg0rco4e"]
+
+[ext_resource type="PackedScene" uid="uid://1xlpnqrslv7u" path="res://Assets/Models/Astronaut.glb" id="1_ay717"]
+
+[node name="char" type="Node3D"]
+
+[node name="Root Scene" parent="." instance=ExtResource("1_ay717")]
+transform = Transform3D(0.91, 0, 0, 0, 0.91, 0, 0, 0, 0.91, -0.0306498, 0, 0.0288439)
+
+[node name="Skeleton3D" parent="Root Scene/RootNode/CharacterArmature" index="0"]
+bones/1/rotation = Quaternion(1.17003e-05, 0.705806, 0.708405, 1.20267e-05)
+bones/3/position = Vector3(2.15298e-05, 0.0083747, 0.00167574)
+bones/3/rotation = Quaternion(-3.5527e-15, 1.19209e-07, 9.0278e-36, 1)
+bones/5/rotation = Quaternion(0.166831, 4.319e-07, 1.0312e-07, 0.985985)
+bones/6/rotation = Quaternion(-0.00536979, -8.32321e-07, -1.20047e-09, 0.999986)
+bones/7/rotation = Quaternion(-0.00173006, 1.03564e-06, -7.51762e-10, 0.999999)
+bones/8/rotation = Quaternion(0.015637, -0.000275799, -4.29033e-06, 0.999878)
+bones/10/position = Vector3(0.00177194, 0.00258246, 0.000999903)
+bones/10/rotation = Quaternion(-0.0422267, 0.0089714, -0.410337, 0.910912)
+bones/11/rotation = Quaternion(0.520466, 0.503343, 0.480823, -0.494541)
+bones/12/rotation = Quaternion(0.022454, 0.265992, -0.20975, 0.940611)
+bones/22/rotation = Quaternion(0.0422539, 0.0256417, 0.232305, 0.971386)
+bones/23/rotation = Quaternion(-0.0766121, -0.00152703, -0.0198675, 0.996862)
+bones/28/position = Vector3(-0.00175917, 0.00258246, 0.000999905)
+bones/28/rotation = Quaternion(-0.0422265, -0.00897084, 0.410337, 0.910912)
+bones/29/rotation = Quaternion(0.520466, -0.503343, -0.480823, -0.494541)
+bones/30/rotation = Quaternion(0.0224541, -0.265992, 0.20975, 0.940611)
+bones/41/rotation = Quaternion(0.042254, -0.0256418, -0.232305, 0.971386)
+bones/42/rotation = Quaternion(-0.0766122, 0.00152705, 0.0198676, 0.996862)
+bones/47/rotation = Quaternion(0.96504, 0.00872748, 0.00211687, 0.261949)
+bones/47/scale = Vector3(0.999976, 0.999984, 0.999932)
+bones/48/rotation = Quaternion(0.517019, 0.0063198, 0.00850598, 0.855909)
+bones/48/scale = Vector3(1.00001, 1.00005, 1)
+bones/50/rotation = Quaternion(0.96504, -0.00872758, -0.002116, 0.261949)
+bones/50/scale = Vector3(0.999976, 0.999984, 0.999932)
+bones/51/rotation = Quaternion(0.517019, -0.00631982, -0.00850601, 0.855909)
+bones/51/scale = Vector3(1.00001, 1.00005, 1)
+bones/55/rotation = Quaternion(-1.20709e-05, 0.705806, 0.708405, -1.16574e-05)
+
+[node name="Pistol" parent="Root Scene/RootNode/CharacterArmature/Skeleton3D" index="0"]
+transform = Transform3D(0.736175, 0.641245, 0.216451, 0.145018, 0.162934, -0.975921, -0.661071, 0.749838, 0.026956, -0.0117331, 0.000649144, 0.00403065)
+
+[editable path="Root Scene"]
